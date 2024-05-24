@@ -1,0 +1,144 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body {
+  @apply bg-Verydarkblue;
+}
+
+.containerr {
+  @apply grid justify-center items-center min-h-screen px-8 lg:py-0 py-24;
+}
+
+.gridd {
+  @apply grid lg:grid-cols-4 grid-cols-1 gap-8;
+}
+
+.profile {
+  @apply row-start-1 row-end-3 bg-Darkblue rounded-2xl;
+}
+
+.profileCard {
+  @apply relative px-8 lg:block grid grid-cols-gridcustom items-center gap-5 pt-8 lg:pb-24 pb-8 bg-Blue rounded-2xl z-10;
+}
+
+.profileImg {
+  @apply border-4 lg:w-2/5 w-full rounded-full;
+}
+
+.profileText {
+  @apply lg:mt-8 w-full;
+}
+
+.profileText p {
+  @apply text-PaleBlue text-text18 font-ffp;
+}
+
+.profileText h1 {
+  @apply text-white lg:text-5xl sm:text-3xl text-2xl  font-light font-ffp lg:leading-lh12 lg:max-w-11;
+}
+
+.nav {
+  @apply p-4;
+}
+
+.nav .a {
+  @apply flex lg:flex-col justify-around lg:gap-4 gap-gap10 text-Desaturatedblue text-text18;
+}
+
+.nav a {
+  @apply hover:text-white transition ease-in-out;
+}
+
+.nav-active {
+  @apply text-white;
+}
+
+.timeWrapper {
+  @apply grid grid-cols-3;
+}
+
+.work {
+  @apply relative grid items-end;
+}
+
+.workImg {
+  @apply absolute w-full h-full rounded-2xl;
+}
+
+.workImg {
+  background: hsl(15 100% 70% / var(--tw-bg-opacity)) url("../../images/icon-work.svg") no-repeat;
+  background-position: top -10px right 20px;
+}
+
+.play {
+  @apply relative grid items-end lg:mt-0 mt-12;
+}
+
+.playImg {
+  @apply absolute w-full h-full rounded-2xl;
+}
+
+.playImg {
+  background: hsl(195, 74%, 62%) url("../../images/icon-play.svg") no-repeat;
+  background-position: top -10px right 20px;
+}
+
+.study {
+  @apply relative grid items-end lg:mt-0 mt-12;
+}
+
+.studyImg {
+  @apply absolute w-full h-full rounded-2xl;
+}
+
+.studyImg {
+  background: hsl(348, 100%, 68%) url("../../images/icon-study.svg") no-repeat;
+  background-position: top -10px right 20px;
+}
+
+.exercise {
+  @apply relative grid items-end lg:mt-0 mt-12;
+}
+
+.exerciseImg {
+  @apply absolute w-full h-full rounded-2xl;
+}
+
+.exerciseImg {
+  background: hsl(145, 58%, 55%) url("../../images/icon-exercise.svg") no-repeat;
+  background-position: top -10px right 20px;
+}
+
+.social {
+  @apply relative grid items-end lg:mt-0 mt-12;
+}
+
+.socialImg {
+  @apply absolute w-full h-full rounded-2xl;
+}
+
+.socialImg {
+  background: hsl(264, 64%, 52%) url("../../images/icon-social.svg") no-repeat;
+  background-position: top -10px right 20px;
+}
+
+.selfcare {
+  @apply relative grid items-end lg:mt-0 mt-12;
+}
+
+.selfcareImg {
+  @apply absolute w-full h-full rounded-2xl;
+}
+
+.selfcareImg {
+  background: hsl(43, 84%, 65%) url("../../images/icon-self-care.svg") no-repeat;
+  background-position: top -10px right 20px;
+}
+
+/* general */
+
+.timeCard {
+  @apply relative lg:translate-y-0 translate-y-12 text-white font-ffp p-8 bg-Darkblue hover:bg-hoverTimeCard transition ease-in-out rounded-2xl;
+}
